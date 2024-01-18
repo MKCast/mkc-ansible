@@ -1,0 +1,16 @@
+---
+- name: My Firts Playbook
+  hosts: tags_Name_mkCast_*
+  become: true
+  gather_facts: true
+  vars_files:
+    - "vars.yaml"
+
+  roles:
+    - first_role
+    - second_role
+
+
+
+    
+     
