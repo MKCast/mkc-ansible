@@ -1,14 +1,18 @@
 ---
 - name: My Firts Playbook
-  hosts: tags_Name_mkCast_*
+  hosts: tags_Name_mkCast_ansible
   become: true
   gather_facts: true
   vars_files:
     - "vars.yaml"
 
   roles:
-    - first_role
-    - second_role
+    #- first_role
+    #- second_role
+    - bucket_create
+    - node_create
+    - send_logs
+
 
 
 
